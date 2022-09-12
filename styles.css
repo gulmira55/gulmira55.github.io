@@ -17,4 +17,11 @@ display: flex; padding: 0; justify-content: center;
   li.menu {list-style: none; padding: 5px; border-style: dashed;}
   li.menu a{text-decoration: none; font-size: 14pt;}
   .table {border-style: double;}
+  #deadline {   width: 35%;
+  font-size: 13pt;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: pink;}
   
