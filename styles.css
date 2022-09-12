@@ -1,27 +1,30 @@
-  .banner {background-color: cornsilk; color: black; font: 15px Arial; font-size: 20pt; font-weight: bold;}
-  #main-heading {background-color: cornsilk; text-align: center; color: black; font: 15px Arial; font-size: 18pt; font-weight: bold;}
-  h2 {background-color: cornsilk; margin-left: 20px; font: 15px Arial; font-size: 16pt; font-weight: bold;}
-  h3 [style] {font: 15px Arial; font-size: 14pt; font-weight: bold;}
-  .main_content {font-family: Sans serif, Verdana, "Times New Roman"; font-size: 11pt;}
-  [href] {font-style: italic; }
+.banner {background-color: cornsilk; color: black; font: 15px Arial; font-size: 20pt; font-weight: bold;}
+#main-heading {background-color: cornsilk; text-align: center; color: black; font: 15px Arial; font-size: 18pt; font-weight: bold;}
+h2 {background-color: cornsilk; margin-left: 20px; font: 15px Arial; font-size: 16pt; font-weight: bold;}
+h3 [style] {font: 15px Arial; font-size: 14pt; font-weight: bold;}
+.main_content {font-family: Sans serif, Verdana, "Times New Roman"; font-size: 11pt;}
+#contact-title {background-color: cornsilk; font: 15px Arial; font-size: 12pt; font-weight: bold;}
+footer {font-family: Arial, Sans serif, Verdana, "Times New Roman"; font-size: 12pt;}
+ 
+[href] {text-decoration: none; font-style: italic; } 
   a:link {color: blue;}
   a:hover {background-color:salmon; color: white;}
-  a:visited {color: gray;}
+  a:visited {color:purple;}
   a:active {color: red;}
-  .logo {width: 800px; height: 600px}
+
+  .logo {width: 100%; height: auto; }
   .icon {width:30px; height:30px;}
-  .menu {
-background-color: pink; width: 100%;
-display: flex; padding: 0; justify-content: center;
-}
+
+.menu {background-color: pink; width: 100%;
+	display: flex; padding: 0; justify-content: center; }
   li.menu {list-style: none; padding: 5px; border-style: dashed;}
   li.menu a{text-decoration: none; font-size: 14pt;}
   .table {border-style: double;}
-  #deadline {   width: 35%;
+  
+#deadline {   width: 35%;
   font-size: 13pt;
   padding-left: 15px;
   margin-left: 15px;
   float: right;
   font-style: italic;
   background-color: pink;}
-  
