@@ -37,6 +37,7 @@ footer {font-family: Arial, Sans serif, Verdana, "Times New Roman"; font-size: 1
   -webkit-box-shadow: 3px 3px 3px #777;
      -moz-box-shadow: 3px 3px 3px #777;
           box-shadow: 3px 3px 3px #777;}
+  .uni {width: 30%; height: 20%; }
 
 .us li::marker {content: "> "; font-size: 1.2em;}
 .checkbox li::marker {content: "✓ "; font-size: 1.2em;}
