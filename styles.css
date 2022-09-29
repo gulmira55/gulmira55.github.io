@@ -55,3 +55,18 @@ footer {font-family: Arial, Sans serif, Verdana, "Times New Roman"; font-size: 1
   float: right;
   font-style: italic;
   background-color: pink;}
+
+
+
+@media only screen and (max-width: 767px) {
+
+p {font-size: 1.5rem;}
+ul {font-size: 1.5rem;}
+.banner {font-size: 2.5rem;}
+#main-heading {font-size: 2rem;}
+h2 {font-size: 2rem;}
+h3 {font-size: 2rem;}
+.planets {width: 100%;}
+#deadline {float:none; width: 100%; padding:0.8em; margin:0;}
+
+}
