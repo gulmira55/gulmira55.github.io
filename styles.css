@@ -11,62 +11,126 @@ body {
 	100% {	background-position: 0% 50%;	}
 }
 
-.banner {background-color: cornsilk; color: black; font: 15px Arial; font-size: 20pt; font-weight: bold;}
-#main-heading {background-color: cornsilk; text-align: center; color: black; font: 15px Arial; font-size: 18pt; font-weight: bold;}
-h2 {background-color: cornsilk; margin-left: 20px; font: 15px Arial; font-size: 16pt; font-weight: bold;}
-h3 [style] {font: 15px Arial; font-size: 14pt; font-weight: bold;}
-.main_content {font-family: Sans serif, Verdana, "Times New Roman"; font-size: 11pt;}
-#contact-title {background-color: cornsilk; font: 15px Arial; font-size: 12pt; font-weight: bold;}
-footer {font-family: Arial, Sans serif, Verdana, "Times New Roman"; font-size: 12pt;}
+.banner {background-image: url("st.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  width: 96%; padding: 2%; 
+  text-align: center ;
+  color: white; 
+  -webkit-text-stroke-width: 0.1rem;
+  -webkit-text-stroke-color: black;
+  font: Arial; 
+  font-size: 6vw; 
+  font-weight: bold;}
+#main-heading {background-color: cornsilk; 
+  text-align: center; 
+  color: black; 
+  font: Arial; 
+  font-size: 2vw; 
+  font-weight: bold;}
+h2 {background-color: cornsilk; 
+  margin-left: 2%; 
+  font: Arial; 
+  font-size: 1.5vw; 
+  font-weight: bold;}
+h3 {font: Arial; 
+  font-size: 1.3vw; 
+  font-weight: bold;}
+.main_content {font-family: Sans serif, Verdana, "Times New Roman";
+  font-size: 1.2vw;}
+aside {font: Arial; 
+  font-size: 1.2vw; }
+#contact-title {background-color: cornsilk; 
+  font: Arial; 
+  font-size: 1.1vw; 
+  font-weight: bold;}
+footer {font-family: Arial, Sans serif, Verdana, "Times New Roman"; 
+  font-size: 1.1vw;}
  
-[href] {text-decoration: none; font-style: italic; } 
+[href] {text-decoration: none; 
+  font-style: italic; } 
   a:link {color: blue;}
   a:hover {background-color:salmon; color: white;}
   a:visited {color:purple;}
   a:active {color: red;}
 
   .logo {width: 100%; height: auto; }
-  .icon {width:30px; height:30px;}
+  .icon {width:2.5vw; height:2.5vw;}
   .planets {display: block;
-    margin-top:10px;
+    margin-top:1vw;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     height: auto;
-  border: 5px solid #fff;
-  -webkit-box-shadow: 3px 3px 3px #777;
-     -moz-box-shadow: 3px 3px 3px #777;
-          box-shadow: 3px 3px 3px #777;}
-  .uni {width: 30%; height: 20%; }
-
+  border: 0.5vw solid #fff;
+  -webkit-box-shadow: 0.1rem 0.1rem 0.1rem #777;
+     -moz-box-shadow: 0.1rem 0.1rem 0.1rem #777;
+          box-shadow: 0.1rem 0.1rem 0.1rem #777;}
+  
 .us li::marker {content: "> "; font-size: 1.2em;}
 .checkbox li::marker {content: "✓ "; font-size: 1.2em;}
 
-.menu {background-color: pink; width: 100%;
-	display: flex; padding: 0; justify-content: center; }
-  li.menu {list-style: none; padding: 5px; border-style: dashed;}
-  li.menu a{text-decoration: none; font-size: 14pt;}
-  .table {border-style: double;}
+.menu {background-color: pink; 
+  width: 100%;
+	display: flex; 
+  padding: 0; 
+  justify-content: center; }
+li.menu {list-style: none; 
+  padding: 0.3rem; 
+  border-style: dashed;}
+li.menu a{text-decoration: none; 
+  font-size: 1.7vw;}
+.table {border-style: double;}
   
 #deadline {   width: 35%;
-  font-size: 13pt;
-  padding-left: 15px;
-  margin-left: 15px;
+  font-size: 1.3vw;
+  padding-left: 0.9vw;
+  margin-left: 1vw;
   float: right;
   font-style: italic;
   background-color: pink;}
 
+label {display:none;}
+#toggle  {display:none;}
+
 
 
 @media only screen and (max-width: 767px) {
+body {padding: 0.8em; background: cornsilk;}
+.main_content, p, ul, h3, aside, footer, #contact-title {font-size: 1rem;}
+.banner {font: Monaco; 
+  font-size: 3.5rem;}
+#main-heading {font-size: 1.5rem;}
+h2 {font-size: 1.5rem;}
 
-p {font-size: 1.5rem;}
-ul {font-size: 1.5rem;}
-.banner {font-size: 2.5rem;}
-#main-heading {font-size: 2rem;}
-h2 {font-size: 2rem;}
-h3 {font-size: 2rem;}
 .planets {width: 100%;}
-#deadline {float:none; width: 100%; padding:0.8em; margin:0;}
+#deadline {float:none; 
+  width: 98%; 
+  padding:1%; 
+  margin-right:2%; 
+  font-size: 1rem;}
+.table {width: 100%; margin: 0.8em;}
+.menu [href] {font-size: 1rem; 
+  font-style: initial;}
+.menu>a {color: darkred;}
 
+label {
+  display:block; 
+  font-size:26px;   
+  float:right; }
+
+.menu {overflow: hidden; 
+  position:relative; 
+  display: none;
+  text-align: center; 
+  width: 100%;}
+
+li.menu { border-style:  none;
+  display: block;
+  border-bottom: 0.01em solid;}
+
+#toggle:checked + .menu {
+  display: block;
 }
+
+
