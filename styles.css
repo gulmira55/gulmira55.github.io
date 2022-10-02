@@ -80,7 +80,10 @@ li.menu {list-style: none;
   border-style: dashed;}
 li.menu a{text-decoration: none; 
   font-size: 1.7vw;}
-.table {border-style: double;}
+.table {border-style: double; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5rem;}
   
 #deadline {   width: 35%;
   font-size: 1.3vw;
@@ -92,7 +95,6 @@ li.menu a{text-decoration: none;
 
 label {display:none;}
 #toggle  {display:none;}
-
 
 
 @media only screen and (max-width: 767px) {
@@ -130,7 +132,38 @@ li.menu { border-style:  none;
   border-bottom: 0.01em solid;}
 
 #toggle:checked + .menu {
-  display: block;
+  display: block;}
 }
 
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+#deadline {float:none; 
+  width: 98%; 
+  padding:1%; 
+  margin-right:2%;
+  font-size: 1rem;}
+body {padding: 0.8em; background: cornsilk;}
+.main_content, p, ul, h3, aside, footer, #contact-title {font-size: 1rem;}
+.banner {font: Monaco; 
+  font-size: 3rem;}
+#main-heading {font-size: 1.5rem;}
+h2 {font-size: 1.2rem;}
+
+.menu [href] {font-size: 1rem; 
+  font-style: initial;}
+label {
+  display:block; 
+  font-size:26px;   
+  float:right; }
+.menu {overflow: hidden; 
+  position:relative; 
+  display: none;
+  text-align: center; 
+  width: 100%;}
+li.menu { border-style:  none;
+  display: block;
+  border-bottom: 0.01em solid;}
+#toggle:checked + .menu {
+  display: block;}
+
+}
