@@ -94,7 +94,7 @@ li.menu a{text-decoration: none;
   background-color: pink;}
 
 label {display:none;}
-#toggle  {display:none;}
+#toggle  {display:none;cursor: pointer;}
 
 
 @media only screen and (max-width: 767px) {
@@ -113,13 +113,14 @@ h2 {font-size: 1.5rem;}
   font-size: 1rem;}
 .table {width: 100%; margin: 0.8em;}
 .menu [href] {font-size: 1rem; 
-  font-style: initial;}
+  font-style: initial; }
+
 .menu>a {color: darkred;}
 
 label {
   display:block; 
   font-size:26px;   
-  float:right; }
+  float:right; cursor: pointer;}
 
 .menu {overflow: hidden; 
   position:relative; 
@@ -154,7 +155,7 @@ h2 {font-size: 1.2rem;}
 label {
   display:block; 
   font-size:26px;   
-  float:right; }
+  float:right; cursor: pointer;}
 .menu {overflow: hidden; 
   position:relative; 
   display: none;
