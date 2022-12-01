@@ -1,44 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Grades</title>
-
-<script type="text/javascript">
-let lab1 = [5,5,0,0,5,0,10];
-let lab2 = [5,5,5,5,5,5,10];
-let lab3 = [5,9,10,15];
-let lab4_5 = [10,5,3,5,5,5,10,10,10,10,5];
-let lab6 = [5,5,10,5,5,10];
-let quiz1 = 40;
-
-let sum1 = lab1[0] + lab1[1] + lab1[2] + lab1[3] + lab1[4] + lab1[5] + lab1[6];
-let sum2 = lab2[0] + lab2[1] + lab2[2] + lab2[3] + lab2[4] + lab2[5] + lab2[6];
-let sum3 = lab3[0] + lab3[1] + lab3[2] + lab3[3];
-let sum4_5 = lab4_5[0] + lab4_5[1] + lab4_5[2] + lab4_5[3] + lab4_5[4] + lab4_5[5] + lab4_5[6] + lab4_5[7] + lab4_5[8] + lab4_5[9] + lab4_5[10];
-let sum6 = lab6[0] + lab6[1] + lab6[2] + lab6[3] + lab6[4] + lab6[5];
-let sums = [sum1, sum2, sum3, sum4_5, sum6];
-
-let total_score = (sums[0] + sums[1] + sums[2] + sums[3] + sums[4]) / 4 + quiz1;
-
-const results = {
-lab1: [5,5,0,0,5,0,10],
-lab2: [5,5,5,5,5,5,10],
-lab3: [5,9,10,15], 
-lab4_5: [10,5,3,5,5,5,10,10,10,10,5], 
-lab6: [5,5,10,5,5,10], 
-quiz1: 40 , 
-sums: [sum1, sum2, sum3, sum4_5, sum6], 
-total_score: (sums[0] + sums[1] + sums[2] + sums[3] + sums[4]) / 4 + quiz1,
-}
-console.log(results)
-</script>
-
+  <title>Gulmira Beisekeyeva</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js"></script>
 </head>
-
 <body>
-</body>
 
+<header>
+<ul class="menu" id="home">
+  <li class="menu"> <a href="#home">Home </a></li>
+  <li class="menu"> <a href="#Education">Education </a></li>
+  <li class="menu"> <a href="#Work">Work experience </a></li>
+  <li class="menu"> <a href="#Volunteering">Volunteering </a></li>
+  <li class="menu"> <a href="ru.html">RU </a></li>
+</ul>
+
+</header>
+
+<div class="box">
+<div id="profile">
+  <img class="avatar" src="me.jpeg">
+    <div class="portrait-title">
+      <h2 id="name">Gulmira Beisekeyeva</h2>
+      <div id="subtext">
+        <p> BA in Economics, 4th year </p>
+        <p> Nazarbayev University </p>
+      </div>
+    </div>
+
+    <ul class="network-icon" >          
+      <li>
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGMhgHCwtstwscCgFJXlCrvQvkxdxShWvSJCmdLBzNhkgKsZNqwGsDVRFCLhDMWVhKZRsWL" >
+          <img class="icon" src="mail.png"></img>
+        </a>
+      </li>        
+        
+      <li>
+        <a href="https://www.linkedin.com/in/gulmira-beisekeyeva-248b8a17b/" >
+          <img class="icon" src="linkedin.png"> </img>
+        </a>
+      </li>
+        
+      <li>
+        <a href="resume.pdf" >
+          <img class="icon" src="cv.png"> </img>
+        </a>
+      </li>
+
+    </ul>
+    
+</div>
+<div class="bio">
+    <h3>Hi, I'm Gulmira!</h3>
+    <p> I am currently a student at Nazarbayev University majoring in Economics. I am a math freak, out-of-box thinker, and I have dean's list awards for every semester. In short, I love learning new things - and I'm <i>good</i> at it. </p>
+    <p> The direct consequence of it is that I excel in many different areas, including Econometrics, Data analysis, Mathematics and Social Psychology. </p>
+    <p> I have also put my skills into practice several times as a Teaching Assistant, intern at an Economic Research Institute, and more.</p>
+</div>
+</div>
+
+<div class="box">  
+  <div class="educ_photos"> 
+    <img name="slide" class="slides"> </img>
+    <div class=left><a class="prev" onclick="plusSlides(-1)">&#10094;</a></div>
+    <div class=right><a class="next" onclick="plusSlides(1)">&#10095;</a></div>
+
+  </div>
+
+  <h2 id="Education">Education</h2>
+  <table class="educ">
+      <tr>
+        <td class="year">2019-2023</td>
+        <td> Nazarbayev University BA in Economics. </td>
+      </tr>
+      <tr> 
+        <td class="year">2018-2019</td>
+        <td> Nazarbayev University Foundation Year Program. </td>
+      </tr>
+      <tr> 
+        <td class="year">2011-2018</td>
+        <td> Specialized school Zhas Daryn, Pavlodar. </td>
+      </tr>
+    </table>
+
+  <h3>Some of the Economics / Finance courses I took:</h3>
+  <table class="courses">
+    <tr>
+      <td class="code"> ECON 301 </td>
+      <td> Econometrics I </td>
+    </tr>
+    <tr>
+      <td class="code"> ECON 413 </td>
+      <td> Econometrics Time Series </td>
+    </tr>
+    <tr>
+      <td class="code"> ECON 433 </td>
+      <td> Econometrics Panel Data </td>
+    </tr>
+    <tr>
+      <td class="code"> ECON 326 </td>
+      <td> The Economics of Financial Markets </td>
+    </tr>
+    <tr>
+      <td class="code"> ECON 333</td>
+      <td> Political Economics </td>
+    </tr>
+    <tr>
+      <td class="code"> ECON 201 </td>
+      <td> Intermediate Microeconomics </td>
+    </tr>
+    <tr>
+      <td class="code"> ECON 202 </td>
+      <td> Intermediate Macroeconomics </td>
+    </tr>    
+    <tr>
+      <td class="code"> FIN 201 </td>
+      <td> Principles of Finance </td>
+    </tr>
+    <tr>
+      <td class="code">Bloomberg</td>
+      <td> Bloomberg Market Concepts course </td>
+    </tr>
+    <tr>
+      <td class="code">Coursera</td>
+      <td> Introduction to Microsoft Excel </td>
+    </tr>
+    <tr>
+      <td class="code">Coursera</td>
+      <td> Creating a Budget with Microsoft Excel </td>
+    </tr>
+
+  </table>
+
+</div>
+
+<div class="box">
+<div id = "recom">
+  <blockquote> Gulmira is a bright, hardworking and responsible young woman with strong motivation to learn new skills, who managed to complete all assigned tasks as requested. It was a pleasure having her work with us in this period. </blockquote>
+  <cite> - E.Tautenov, Director of Center for Macroeconomic Research and Forecasting, ERI.</cite>
+</div>
+
+
+<div class="work_exp">
+  <h2 id="Work">Work experience</h2>
+    <table class="work">
+      <tr>
+        <td class="year">2022</td>
+        <td> Internship in the Economic Research Institute, Nur-Sultan. Responsible for collecting and
+analyzing economic data, writing research reports. </td>
+      </tr>
+      <tr> 
+        <td class="year">2020</td>
+        <td> Undergraduate Teaching assistant for the ECON 101: Introduction to Microeconomics course,
+Nazarbayev University. </td>
+      </tr>
+      <tr> 
+        <td class="year">2020</td>
+        <td> Assistant Manager of Proofreaders at Khan Academy Qazaq project. Coordinated and assigned
+tasks to volunteers. </td>
+      </tr>
+      <tr> 
+        <td class="year">2019-2020</td>
+        <td> Volunteer for Khan Academy Qazaq project. Proofread translated text in Kazakh. </td>
+      </tr>
+    </table>
+</div>
+
+  <h2>Volunteering and Social Work</h2>
+  <table class="vol">
+      <tr>
+        <td class="year">2019</td>
+        <td> Volunteer in registration, accomodation and orientation processes for newly admitted students at
+Nazarbayev University.</td>
+      </tr>
+      <tr> 
+        <td class="year">2019</td>
+        <td> Volunteer in the Charity Tennis Match between Nadal and Djokovic in Nur-Sultan.</td>
+      </tr>
+      <tr> 
+        <td class="year">2018</td>
+        <td> Volunteer at Astana Marathon 2018.</td>
+      </tr>
+    </table>
+  </div>
+
+<hr size="2" width="90%" color="black"> 
+<div class="foots"> 
+<center class = "foots"> <b> My contacts </b> </center>
+<center class="foots"> gulmira.beisekeyeva@gmail.com</center>
+<ul class="foot-networks">          
+      <li>
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGMhgHCwtstwscCgFJXlCrvQvkxdxShWvSJCmdLBzNhkgKsZNqwGsDVRFCLhDMWVhKZRsWL" >
+          <img class="icon" src="mail.png"></img>
+        </a>
+      </li>        
+        
+      <li>
+        <a href="https://www.linkedin.com/in/gulmira-beisekeyeva-248b8a17b/" >
+          <img class="icon" src="linkedin.png"> </img>
+        </a>
+      </li>
+        
+      <li>
+        <a href="resume.pdf" >
+          <img class="icon" src="cv.png"> </img>
+        </a>
+      </li>
+
+    </ul>
+</div> 
+
+</body>
 </html>
