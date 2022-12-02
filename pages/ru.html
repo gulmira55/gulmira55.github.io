@@ -5,24 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Гульмира Бейсекеева</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="main.js"></script>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../main.js"></script>
 </head>
 <body>
 
-<header>
+<header >
 <ul class="menu">
   <li class="menu"> <a href="#home">Домашняя </a></li>
-  <li class="menu"> <a href="#Education">Образование </a></li>
+  <li class="menu"> <a href="#education">Образование </a></li>
   <li class="menu"> <a href="#Work">Опыт работы </a></li>
   <li class="menu"> <a href="#Volunteering">Волонтерство </a></li>
-  <li class="menu"> <a href="index.html">ENG </a></li>
+  <li class="menu"> <a href="../index.html">ENG </a></li>
 </ul>
 </header>
 
-<div class="box">
+<div id="home" class="box">
 <div id="profile">
-  <img class="avatar" src="me.jpeg">
+  <img class="avatar" src="../images/me.jpeg">
     <div class="portrait-title">
       <h2 id="name">Бейсекеева Гульмира</h2>
       <div id="subtext">
@@ -34,19 +34,19 @@
     <ul class="network-icon" >          
       <li>
         <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGMhgHCwtstwscCgFJXlCrvQvkxdxShWvSJCmdLBzNhkgKsZNqwGsDVRFCLhDMWVhKZRsWL" >
-          <img class="icon" src="mail.png"></img>
+          <img class="icon" src="../images/mail.png"></img>
         </a>
       </li>        
         
       <li>
         <a href="https://www.linkedin.com/in/gulmira-beisekeyeva-248b8a17b/" >
-          <img class="icon" src="linkedin.png"> </img>
+          <img class="icon" src="../images/linkedin.png"> </img>
         </a>
       </li>
         
       <li>
-        <a href="resume.pdf" >
-          <img class="icon" src="cv.png"> </img>
+        <a href="../resources/resume.pdf" >
+          <img class="icon" src="../images/cv.png"> </img>
         </a>
       </li>
 
@@ -55,31 +55,66 @@
 </div>
 
   <div class="bio">
-    <h3>Меня зовут Гульмира!</h3>
-    <p> На данный момент, я являюсь студентом Назарбаев Университета по специальности Экономика. Я заядлый математик, обладатель нестандартного мышления и сертификатов Dean's List за отличную успеваемость за все семестры. Иначе говоря, я люблю учиться новому, и у меня хорошо это получается. </p>
+    <h3 style="margin-top: -20px;">Меня зовут Гульмира!</h3>
+    <p> На данный момент, я являюсь студентом Назарбаев Университета по специальности Экономика. Я заядлый математик, любитель нестандартных решений и обладатель сертификатов Dean's List за отличную успеваемость за все семестры. Иначе говоря, я люблю учиться новому, и у меня хорошо это получается. </p>
     <p> Благодаря этим двум факторам, я развила различные навыки, включая Эконометрику, Дата-аналитику, Математику и Общественную Психологию. </p>
-    <p> Эти навыки мне пригодились во время моего опыта в качестве Ассистента Профессора в моем университете, стажировке в Институте Экономических Исследований, и не только.</p>
+    <p> Эти навыки мне пригодились во время моего опыта в качестве Ассистента Профессора, стажировке в Институте Экономических Исследований, и не только.</p>
 </div>
 </div>
+
+
+
+  <div class="slider"> 
+    <div class="slides">
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <input type="radio" name="radio-btn" id="radio5">
+      <div class="slide first">
+        <img src="../images/c2.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="../images/c6.jpg" alt="">
+      </div>      
+      <div class="slide">
+        <img src="../images/c8.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="../images/bloom.jpg" alt="">
+      </div>      
+      <div class="slide">
+        <img src="../images/toptalents.png" alt="">
+      </div>
+      <div class="navigation-auto">
+        <div class="auto-btn1"> </div>
+        <div class="auto-btn2"> </div>
+        <div class="auto-btn3"> </div>
+        <div class="auto-btn4"> </div>
+        <div class="auto-btn5"> </div>
+      </div>
+    </div>
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+      <label for="radio5" class="manual-btn"></label>
+    </div>
+  </div>
 
 
 <div class="box">  
-  <div class="educ_photos"> 
-    <img name="slide" class="slides"> </img>
-    <div class=left><a class="prev" onclick="plusSlides(-1)">&#10094;</a></div>
-    <div class=right><a class="next" onclick="plusSlides(1)">&#10095;</a></div>
 
-  </div>
-
-  <h2 id="Education">Образование</h2>
+  <h2 id="education">Образование</h2>
   <table class="educ">
       <tr>
         <td class="year">2019-2023</td>
-        <td> Бакалавриат ОП Экономика, ОП Майнор Математика. Назарбаев Университет. </td>
+        <td> Бакалавриат ОП Экономика, Назарбаев Университет. </td>
       </tr>
       <tr> 
         <td class="year">2018-2019</td>
-        <td> Программа Предуниверситетской Подготовки (NUFYP). Назарбаев Университет. </td>
+        <td> NUFYP, Назарбаев Университет. </td>
       </tr>
       <tr> 
         <td class="year">2011-2018</td>
@@ -87,7 +122,7 @@
       </tr>
     </table>
 
-  <h3>Некоторые Экономические и Финансовые курсы, которые я закрыла:</h3>
+  <h3 id="long">Некоторые Экономические и Финансовые курсы, которые я закрыла:</h3>
   <table class="courses">
     <tr>
       <td class="code"> ECON 301 </td>
@@ -195,19 +230,19 @@
 <ul class="foot-networks">          
       <li>
         <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGMhgHCwtstwscCgFJXlCrvQvkxdxShWvSJCmdLBzNhkgKsZNqwGsDVRFCLhDMWVhKZRsWL" >
-          <img class="icon" src="mail.png"></img>
+          <img class="icon" src="../images/mail.png"></img>
         </a>
       </li>        
         
       <li>
         <a href="https://www.linkedin.com/in/gulmira-beisekeyeva-248b8a17b/" >
-          <img class="icon" src="linkedin.png"> </img>
+          <img class="icon" src="../images/linkedin.png"> </img>
         </a>
       </li>
         
       <li>
         <a href="resume.pdf" >
-          <img class="icon" src="cv.png"> </img>
+          <img class="icon" src="../images/cv.png"> </img>
         </a>
       </li>
 
