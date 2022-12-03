@@ -289,12 +289,14 @@ html {
   scroll-snap-type: y mandatory;
 }
 #long {width: 45%}
+label {display:none;}
+#toggle  {display:none;cursor: pointer;}
 
 @media only screen and (max-width: 767px) {
 .slider {
   display: flex;
   position: absolute;
-  margin-top: 97vw;
+  margin-top: 103vw;
   margin-left: 6%;
   width: 75vw;
   height: 60vw;
@@ -315,12 +317,12 @@ html {
 .box {
   width: 100%;
 }
-.courses {margin-bottom: 80vw; }
+.courses {margin-bottom: 85vw; }
 .work_exp {
   float: none;
   width: 100%;
 }
-#three {display: none;}
+#one, #three {display: none;}
 #recom {
   float: none;
   width: 102%;
@@ -381,4 +383,35 @@ body {
   color: black;
 }
 #long {width: 100%}
+
+header { background: transparent; }
+label {
+  display:block; 
+  font-size:20px;   
+  float:right; cursor: pointer;}
+
+#toggle:checked + .menu {
+  display: block;}
+
+.menu { 
+  position:relative; 
+  display: none; 
+  text-align: center;
+  margin-left: 0;
+  margin-top: 30px;
+  width: 95%;}
+
+.menu [href] {font-size: 3vw; 
+  font-style: initial; }
+
+.menu>a {color: blue;}
+
+li.menu { border-style:  none;
+  display: block;
+  background: aliceblue;
+  padding: 0.5vw;
+}
+;
+
+
 }
