@@ -129,15 +129,14 @@ padding:0.1vw;}
 table  {
   font-size: 1.5vw;
   font-weight: normal;
-  margin-bottom: 10vw;
-
-}
-
-.educ{
   margin-bottom: 3vw;
+
 }
+
+
 #education {
-  margin-top: -45vw;
+  margin-top: -3vw;  
+  float: left;
 }
 .courses{
   font-size: 1.4vw;
@@ -252,15 +251,14 @@ table  {
 }
 
 .work_exp {
-  float: left;
   width: 50%;
-
 }
 
 #recom {
   float: right;
   width: 43%;
   margin-left: 1%;
+  margin-top: -27vw;
   margin-bottom: 20vw;
   padding: 1%;
 
@@ -294,8 +292,9 @@ html {
 
 @media only screen and (max-width: 767px) {
 .slider {
+  display: flex;
   position: absolute;
-  margin-top: 88vw;
+  margin-top: 97vw;
   margin-left: 6%;
   width: 75vw;
   height: 60vw;
@@ -306,29 +305,28 @@ html {
 }
 .navigation-manual {
   width: 75vw;
-  margin-top: 15vw;
+  margin-top: 25vw;
 }
 .navigation-auto{
   width: 75vw;
-  margin-top: 55vw
+  margin-top: 65vw
 }
 #education {margin-top: 0;}
 .box {
   width: 100%;
 }
+.courses {margin-bottom: 80vw; }
 .work_exp {
   float: none;
   width: 100%;
-  margin-top: -98vw;
-  margin-bottom: 40vw;
 }
-
+#three {display: none;}
 #recom {
   float: none;
   width: 102%;
   background: white;
   margin-left: -1.5%;
-  margin-top: 120vw;
+  margin-top: 0vw;
   padding: 2vw;
 }
 blockquote{
