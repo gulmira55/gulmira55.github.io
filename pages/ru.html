@@ -5,22 +5,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Гульмира Бейсекеева</title>
-  <link rel="stylesheet" href="../styles.css">
-  <script src="../main.js"></script>
+  <link rel="stylesheet" href="../styles.css">>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script defer src="../main.js"></script>
 </head>
 <body>
 
 <header >
+  <label for="toggle"> &#9776; </label>
+  <input type="checkbox" id="toggle"/>
+
 <ul class="menu">
-  <li class="menu"> <a href="#home">Домашняя </a></li>
-  <li class="menu"> <a href="#education">Образование </a></li>
-  <li class="menu"> <a href="#Work">Опыт работы </a></li>
-  <li class="menu"> <a href="#Volunteering">Волонтерство </a></li>
+  <li class="menu"> <a href="#one">Домашняя </a></li>
+  <li class="menu"> <a href="#two">Образование </a></li>
+  <li class="menu"> <a href="#three">Опыт работы</a></li>
+  <li class="menu"> <a href="#four">Волонтерство </a></li>
   <li class="menu"> <a href="../index.html">ENG </a></li>
 </ul>
-</header>
 
-<div id="home" class="box">
+</header>
+<hr size="2" width="90%" color="black" style="margin-bottom: 5%;" id="one"> 
+<div class="box"  id="home">
 <div id="profile">
   <img class="avatar" src="../images/me.jpeg">
     <div class="portrait-title">
@@ -45,7 +50,7 @@
       </li>
         
       <li>
-        <a href="../resources/resume.pdf" >
+        <a href="resources/resume.pdf" >
           <img class="icon" src="../images/cv.png"> </img>
         </a>
       </li>
@@ -53,60 +58,18 @@
     </ul>
     
 </div>
-
-  <div class="bio">
-    <h3 style="margin-top: -20px;">Меня зовут Гульмира!</h3>
-    <p> На данный момент, я являюсь студентом Назарбаев Университета по специальности Экономика. Я заядлый математик, любитель нестандартных решений и обладатель сертификатов Dean's List за отличную успеваемость за все семестры. Иначе говоря, я люблю учиться новому, и у меня хорошо это получается. </p>
+<div class="bio">
+    <center> <h3 id='hi' style="margin-top: -20px;">Меня зовут Гульмира!</h3> </center>
+    <p> На данный момент, я являюсь студентом Назарбаев Университета по специальности Экономика. Я заядлый математик, любитель нестандартных решений и обладатель сертификатов Dean's List за отличную успеваемость за все семестры. Иначе говоря, я люблю учиться новому, и у меня хорошо это получается.</p>
     <p> Благодаря этим двум факторам, я развила различные навыки, включая Эконометрику, Дата-аналитику, Математику и Общественную Психологию. </p>
     <p> Эти навыки мне пригодились во время моего опыта в качестве Ассистента Профессора, стажировке в Институте Экономических Исследований, и не только.</p>
 </div>
 </div>
+<hr size="2" width="90%" color="black" style="margin-top: -3%; margin-bottom: 5%;" id="two"> 
 
 
-
-  <div class="slider"> 
-    <div class="slides">
-      <input type="radio" name="radio-btn" id="radio1">
-      <input type="radio" name="radio-btn" id="radio2">
-      <input type="radio" name="radio-btn" id="radio3">
-      <input type="radio" name="radio-btn" id="radio4">
-      <input type="radio" name="radio-btn" id="radio5">
-      <div class="slide first">
-        <img src="../images/c2.jpg" alt="">
-      </div>
-      <div class="slide">
-        <img src="../images/c6.jpg" alt="">
-      </div>      
-      <div class="slide">
-        <img src="../images/c8.jpg" alt="">
-      </div>
-      <div class="slide">
-        <img src="../images/bloom.jpg" alt="">
-      </div>      
-      <div class="slide">
-        <img src="../images/toptalents.png" alt="">
-      </div>
-      <div class="navigation-auto">
-        <div class="auto-btn1"> </div>
-        <div class="auto-btn2"> </div>
-        <div class="auto-btn3"> </div>
-        <div class="auto-btn4"> </div>
-        <div class="auto-btn5"> </div>
-      </div>
-    </div>
-    <div class="navigation-manual">
-      <label for="radio1" class="manual-btn"></label>
-      <label for="radio2" class="manual-btn"></label>
-      <label for="radio3" class="manual-btn"></label>
-      <label for="radio4" class="manual-btn"></label>
-      <label for="radio5" class="manual-btn"></label>
-    </div>
-  </div>
-
-
-<div class="box">  
-
-  <h2 id="education">Образование</h2>
+<div class="box" id="education">
+  <h2>Образование</h2>
   <table class="educ">
       <tr>
         <td class="year">2019-2023</td>
@@ -173,14 +136,24 @@
 
 </div>
 
+<div class="container"> 
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"> <img src="../images/c2.jpg"> </div>
+      <div class="swiper-slide"> <img src="../images/c6.jpg"> </div>
+      <div class="swiper-slide"> <img src="../images/c8.jpg"> </div>
+      <div class="swiper-slide"> <img src="../images/bloom.jpg"> </div>
+      <div class="swiper-slide"> <img src="../images/toptalents.png"> </div>
+     </div>
+    <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+ </div>
+</div> 
+
+<hr size="2" width="90%" color="black" id="three"> 
+
 <div class="box">
-<div id = "recom">
-  <blockquote>  [Гульмира] ответственно подходила к работе, выполнила все поставленные перед ней задачи в соответствии с требованиями, и показала сильное стремление к саморазвитию.
- </blockquote>
-  <cite> - Е.Таутенов, Директор Центра Макроэномических Исследований и Прогнозирования, Институт Экономических Исследований.</cite>
-</div>
-
-
 <div class="work_exp">
   <h2 id="Work">Опыт работы</h2>
     <table class="work">
@@ -203,7 +176,16 @@
       </tr>
     </table>
 </div>
+</div>
+<div class="box">
+<div id = "recom">
+  <blockquote> [Гульмира] ответственно подходила к работе, выполнила все поставленные перед ней задачи в соответствии с требованиями, и показала сильное стремление к саморазвитию.</blockquote>
+  <cite> - Е.Таутенов, Директор Центра Макроэномических Исследований и Прогнозирования, Институт Экономических Исследований.</cite>
+</div>
+</div>
 
+<hr size="2" width="90%" color="black" id="four"> 
+<div class="box">
   <h2 id="Volunteering">Волонтерство и Общественная Деятельность</h2>
   <table class="vol">
       <tr>
@@ -221,9 +203,10 @@
         <td> Волонтерство на Astana Marathon 2018.</td>
       </tr>
     </table>
-</div>
+  </div>
 
-<hr size="2" width="90%" color="black"> 
+<hr size="2" width="90%" color="black" style="margin-top: 5%"> 
+<div class="box">
 <div class="foots"> 
 <center class = "foots"> <b> Контакты </b> </center>
 <center class="foots"> gulmira.beisekeyeva@gmail.com</center>
@@ -241,13 +224,35 @@
       </li>
         
       <li>
-        <a href="resume.pdf" >
+        <a href="resources/resume.pdf" >
           <img class="icon" src="../images/cv.png"> </img>
         </a>
       </li>
 
     </ul>
 </div> 
+</div>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+</script>
 </body>
 </html>

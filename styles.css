@@ -3,11 +3,24 @@ body {
   background-color: aliceblue;
   font-family: 'serif';
 }
+.box {
+  margin-top: 4vw;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
 
 .container{
   width: 50%;
-  display: flex;
-  float: right;
+  position: absolute;
+  margin-left: 50%;
   align-items: center;
   justify-content: center;
 }
@@ -43,7 +56,7 @@ blockquote:before {
 blockquote:after {
   content: '”';
   float: right;
-  margin-top: 4vw;
+  margin-top: 4.5vw;
 }
 
 cite {
@@ -72,7 +85,7 @@ header {
   margin-top: 0;}
 
 li.menu {list-style: none;}
-#long {margin-right: 50%}
+#long {margin-right: 30%}
 
 [href]{
 text-decoration: none;
@@ -184,7 +197,7 @@ table  {
   margin-top: -27vw;
   margin-bottom: 5vw;
   padding: 1%;
-
+  transition-delay: 200ms;
 }
 
 
@@ -211,11 +224,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.box {
-  margin-top: 4vw;
-  scroll-snap-align: start;
-  scroll-snap-type: y mandatory;
-}
+
 label {display:none;}
 #toggle  {display:none;cursor: pointer;}
 
@@ -229,6 +238,8 @@ label {display:none;}
 
 .container {
   display: inline-block;
+  position: relative;
+  margin-left: 0;
   float: none;
   width: 100%;
   height: 50vh;
