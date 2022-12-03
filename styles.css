@@ -1,9 +1,11 @@
 *{  box-sizing: border-box;}
-body {  background-color: aliceblue;}
+body {  
+  background-color: aliceblue;
+  font-family: 'serif';
+}
 
 .container{
   width: 50%;
-  height: 60vh;
   display: flex;
   float: right;
   align-items: center;
@@ -19,23 +21,29 @@ body {  background-color: aliceblue;}
   width: 100%;} 
 
 blockquote {
-  font-weight: 100;
-  font-size: 1.8vw;
+  font-weight: 100; 
+  font-family: times;
+  line-height: 2.1vw;
+  font-size: 1.6vw;
   font-style: italic;
   position: relative;
   margin: 0;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
   padding: .5rem;
 }
 
 blockquote:before,blockquote:after {
   color: cadetblue;
-  font-size: 5vw;
+  font-size: 60px;
 }
 blockquote:before {
   content: '“';
 }
 blockquote:after {
   content: '”';
+  float: right;
+  margin-top: 4vw;
 }
 
 cite {
@@ -87,7 +95,7 @@ text-decoration: none;
   margin-left: 2%;
 }
 .icon {
-  width: 3vw;
+  width: 5vw;
   height: auto;
   padding:1vw;
 
@@ -102,32 +110,36 @@ text-decoration: none;
 }
 
 .portrait-title {
-  margin-left: 2%; 
-  font: Arial;  
+  margin-left: 2%;   
   font-weight: normal;
   padding: none;
   margin: none;
-
+  font-family: sans-serif;
 }
-
+#hi {
+  font-family: verdana;
+  font-size: 2.5vw;
+}
 #name {
-  font-size: 3vw;
+  font-size: 2.2vw;
   color: blue;
   text-align: center;
   margin-top: auto;
 
 }
 #subtext {
-  font-size: 2vw;
+  font-size: 1.7vw;
   color: black;
   text-align: center;
   margin: 0;
   padding: 0;
   line-height: 0.8vw;
+  font-family: times;
 }
 
 .bio {
-  font-size: 1.8vw;
+  font-size: 1.5vw;
+  font-family: verdana;
   margin-left: 35%;
   margin-right: 5%;
   margin-bottom: 10%;
@@ -170,13 +182,14 @@ table  {
   width: 43%;
   margin-left: 1%;
   margin-top: -27vw;
-  margin-bottom: 20vw;
+  margin-bottom: 5vw;
   padding: 1%;
 
 }
 
 
 .foots {
+  margin-top: 1vw;
   font-size: 1.3vw;
   padding: 0.3vw;
 }
@@ -188,8 +201,12 @@ table  {
   padding: 0; 
   justify-content: center;
 }
-h2 {font-size: 2.5vw;}
-h3 {font-size: 2vw;}
+h2 {
+  font-size: 2.2vw;
+  font-family: verdana;}
+h3 {
+  font-size: 1.8vw;
+  font-family: verdana;}
 html {
   scroll-behavior: smooth;
 }
@@ -199,10 +216,8 @@ html {
   scroll-snap-align: start;
   scroll-snap-type: y mandatory;
 }
-#long {width: 45%}
 label {display:none;}
 #toggle  {display:none;cursor: pointer;}
-
 
 
 
@@ -213,9 +228,10 @@ label {display:none;}
 @media only screen and (max-width: 767px) {
 
 .container {
+  display: inline-block;
   float: none;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
 }
 
 #education {margin-top: 0;}
@@ -223,25 +239,31 @@ label {display:none;}
   width: 100%;
 }
 .work_exp {
-  float: none;
+  display: inline-block;
   width: 100%;
 }
-#one, #three {display: none;}
+
 #recom {
   float: none;
-  width: 102%;
-  background: white;
-  margin-left: -1.5%;
+  width: 105%;
+  margin-left: -5%;
   margin-top: 0vw;
-  padding: 2vw;
+  padding: 3vw;
 }
 blockquote{
-  font-size: 2.5vw;
-}
-cite{
-  font-size: 2vw;
+  font-size: 3.2vw;
+  line-height: 4vw;
 }
 
+cite{
+  font-size: 2.7vw;
+  font-style: normal;
+}
+
+.foots {
+  font-size: 2vw;
+  padding: 0.8vw;
+}
 table  {
   font-size: 3vw;
 }
@@ -286,7 +308,6 @@ body {
   padding: 5%;
   color: black;
 }
-#long {width: 100%}
 
 header { background: transparent; }
 label {
